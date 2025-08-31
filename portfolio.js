@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize AOS
     AOS.init({
         once: true, // Whether animation should happen only once - while scrolling down
         duration: 1000, // Duration of animation
         easing: 'ease-out-quad', // Easing for animation
     });
 
-    // Update current year in footer
     const currentYear = new Date().getFullYear();
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) {
@@ -35,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Optional: Add a class to header on scroll for a subtle change
     const header = document.querySelector('.header');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -44,6 +41,4 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('scrolled');
         }
     });
-    // Add CSS for .header.scrolled if you use this
-    // .header.scrolled { background-color: rgba(26, 26, 46, 0.95); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
 });
