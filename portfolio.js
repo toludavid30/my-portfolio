@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init({
-        once: true, // Whether animation should happen only once - while scrolling down
-        duration: 1000, // Duration of animation
-        easing: 'ease-out-quad', // Easing for animation
+        once: true, 
+        duration: 1000,
+        easing: 'ease-out-quad',
     });
 
     const currentYear = new Date().getFullYear();
