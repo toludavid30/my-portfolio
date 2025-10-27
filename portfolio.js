@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Adjust scroll position to account for fixed header
                 const headerOffset = document.querySelector('.header').offsetHeight;
                 const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                const offsetPosition = elementPosition - headerOffset - 5; // -20 for a little extra padding
+                const offsetPosition = elementPosition - headerOffset -10; // -20 for a little extra padding
 
                 window.scrollTo({
                     top: offsetPosition,

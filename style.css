@@ -131,7 +131,7 @@ ul {
 .header {
     background-color: rgba(26, 26, 46, 0.9); /* Semi-transparent dark for header */
     padding: 15px 0;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     left: 0;
@@ -202,7 +202,7 @@ ul {
 
 /* Hero Section */
 .hero-section {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -626,6 +626,18 @@ ul {
 }
 
 @media (max-width: 480px) {
+    .header{
+        width: 100%;
+    }
+    .navbar{
+        max-width: 100%;
+    }
+    .nav-links li {
+    margin-left: px;
+    }
+    .hero-section{
+        height: 70vh;
+    }
     .hero-title {
         font-size: 2em;
     }
